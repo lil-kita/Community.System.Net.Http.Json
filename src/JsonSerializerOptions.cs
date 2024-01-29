@@ -1,5 +1,4 @@
-﻿using Community.System.Net.Http.Json.src;
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using System.Text.Json;
 
 namespace Community.System.Net.Http.Json;

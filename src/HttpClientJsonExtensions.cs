@@ -37,7 +37,7 @@ public static partial class HttpClientJsonExtensions
     /// <exception cref="ArgumentNullException">The <paramref name="client"/> is <see langword="null"/>.</exception>
     [RequiresUnreferencedCode("SerializationUnreferencedCodeMessage")]
     [RequiresDynamicCode("SerializationDynamicCodeMessage")]
-    public static IAsyncEnumerable<TValue> SendFromJsonAsAsyncEnumerable<TValue>(this HttpClient client, HttpRequestMessage request, JsonSerializerOptions? options, CancellationToken cancellationToken = default) =>
+    public static IAsyncEnumerable<TValue> SendFromJsonAsAsyncEnumerable<TValue>(this HttpClient client, HttpRequestMessage request, JsonSerializerOptions options, CancellationToken cancellationToken = default) =>
         FromJsonStreamAsyncCore<TValue>(client, request, options, cancellationToken);
 
     [RequiresUnreferencedCode("SerializationUnreferencedCodeMessage")]
